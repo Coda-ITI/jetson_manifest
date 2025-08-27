@@ -10,7 +10,7 @@
     <project name="meta-openembedded" path="sources/meta-openembedded" remote="oe"      revision="kirkstone"/>
     <project name="meta-tegra" path="sources/meta-tegra" remote="coda"      revision="kirkstone-l4t-r32.7.x"/>
     <project name="meta-coda" path="sources/meta-coda" remote="coda"             revision="jetson_service"  />
-    <project name="detection_model" path="sources/road-sign-detection-YOLO"    remote="coda" revision="main"/>
+    <project name="road-sign-detection-YOLO" path="sources/detection_model"    remote="coda" revision="main"/>
 
     <project name="jetson-hooks" path="sources/jetson-hooks" remote="coda"                  revision="main" />
     <repo-hooks in-project="jetson-hooks" enabled-list="post-sync" />
