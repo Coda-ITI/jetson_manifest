@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+    <remote name="yocto"  fetch="https://github.com/yoctoproject" />
+    <remote name="oe"     fetch="https://github.com/openembedded" />
+    <remote name="coda"   fetch="https://github.com/Coda-ITI" />
+
+
+    <project name="poky" path="sources/poky" remote="yocto"                             revision="kirkstone"/>
+    <project name="meta-openembedded" path="sources/meta-openembedded" remote="oe"      revision="kirkstone"/>
+    <project name="meta-tegra" path="sources/meta-tegra" remote="coda"      revision="kirkstone-l4t-r32.7.x"/>
+    <project name="meta-coda" path="sources/meta-coda" remote="coda"             revision="jetson_service"  />
+    <project name="detection_model" path="sources/road-sign-detection-YOLO"    remote="coda" revision="main"/>
+
+    <project name="jetson-hooks" path="sources/jetson-hooks" remote="coda"                  revision="main" />
+    <repo-hooks in-project="jetson-hooks" enabled-list="post-sync" />
+
+  </manifest>
+
+
